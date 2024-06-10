@@ -7,6 +7,7 @@ Final Project: Interactive UCSC map
 var map = L.map('map').setView([36.9920578, -122.0590163], 15);
 
 
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -14,34 +15,34 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 var koiIcon = L.icon({
-    iconUrl: 'img/koi.png', //image for markers
-    iconSize: [38, 95],  //size of markers easily adjustible here
-    iconAnchor: [22, 94],
+    iconUrl: 'img/koiIcon.png', //image for markers
+    iconSize: [100, 100],  //size of markers easily adjustible here
+    iconAnchor: [50, 50],
     popupAnchor: [-3, -76],
 });
 
 var barrelIcon = L.icon({
-    iconUrl: 'img/barrels.jpeg',
-    iconSize: [38, 95],
-    iconAnchor: [22, 94],
+    iconUrl: 'img/barrelsIcon.png',
+    iconSize: [100, 100],
+    iconAnchor: [50, 50],
     popupAnchor: [-3, -76],
 });
 
 var rockIcon = L.icon({
-    iconUrl: 'img/rockgarden.jpg',
-    iconSize: [38, 95],
+    iconUrl: 'img/gardenIcon.png',
+    iconSize: [100, 100],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
 });
 var buddhaIcon = L.icon({
-    iconUrl: 'img/buddahut.jpg',
-    iconSize: [38, 95],
+    iconUrl: 'img/buddhaIcon.png',
+    iconSize: [100, 100],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
 });
 var catsCradleIcon = L.icon({
-    iconUrl: 'img/catscradle.jpg',
-    iconSize: [38, 95],
+    iconUrl: 'img/catIcon.png',
+    iconSize: [90, 95],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
 });
@@ -90,7 +91,7 @@ for (i = 0; i < 5; i++) { //loops through and adds all the markers in the marker
 
 function onMarkerClick(e) {
     $.get(e.target.options.ndurl, function( response ) {
-        L.popup({maxHeight: 400})  
+        L.popup({maxHeight: 1000, maxWidth: 650})  
                 .setLatLng(e.latlng)
                 .setContent(response)
                 .openOn(map);

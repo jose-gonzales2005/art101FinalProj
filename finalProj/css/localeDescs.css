@@ -1,10 +1,15 @@
-.minor-section {
+.minor-section-popup {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #d71818;
-    background-color: #DDD8C4;
+    border: solid 3px #2a372a;
+    background-color: #e8e3d0;
   }
 
   #map {
     height: 800px;
+  }
+
+  .localeImg {
+    height: 300px;
+    width: 600px;
   }

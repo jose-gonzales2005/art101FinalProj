@@ -1,9 +1,16 @@
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    padding: 50px;
+    margin-bottom: 60px;
+    border: solid 5px #100e0e;
+    background-color: #33743e;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(247, 251, 247);
+  }
+
+  #title {
+    font-family: Cursive, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 1px;
   }
 
   #map {
@@ -11,6 +18,6 @@
   }
 
 #content {
-  background-color: beige;
+  background-color: rgb(208, 246, 208);
   font-family: Arial, Helvetica, sans-serif;
 }
