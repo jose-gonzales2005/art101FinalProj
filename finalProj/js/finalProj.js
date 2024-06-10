@@ -33,6 +33,12 @@ var rockIcon = L.icon({
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
 });
+var buddhaIcon = L.icon({
+    iconUrl: 'img/budda hut.jpg',
+    iconSize: [38, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, 76],
+});
 
 
 const markers = [
@@ -54,6 +60,12 @@ const markers = [
         icon: rockIcon,
         position: [37.001043, -122.049504]
     },
+    {
+        name: 'buddhaMarker',
+        url: 'localeDescs/buddha.html',
+        icon: buddhaIcon,
+        position: [37.006623, -122.060037],
+    }
 ]
 
 
