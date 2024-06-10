@@ -27,6 +27,13 @@ var barrelIcon = L.icon({
     popupAnchor: [-3, -76],
 });
 
+var rockIcon = L.icon({
+    iconURL: 'img/rockgarden.jpg',
+    iconSize: [38, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76]
+});
+
 
 const markers = [
     {
@@ -40,7 +47,13 @@ const markers = [
         url: 'url.com',
         icon: barrelIcon,
         position: [37.010012, -122.066216],
-    }
+    },
+    {
+        name: 'rockMarker',
+        url: 'localeDescs/rockGarden.html',
+        icon: rockIcon,
+        position: [37.001043, -122.049504]
+    },
 ]
 
 
