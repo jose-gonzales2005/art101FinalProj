@@ -34,7 +34,7 @@ var rockIcon = L.icon({
     popupAnchor: [-3, -76]
 });
 var buddhaIcon = L.icon({
-    iconUrl: 'img/budda hut.jpg',
+    iconUrl: 'img/buddahut.jpg',
     iconSize: [38, 95],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
@@ -56,7 +56,7 @@ const markers = [
     },
     {
         name: 'barrelsMarker',
-        url: 'url.com',
+        url: 'localeDescs/barrels.html',
         icon: barrelIcon,
         position: [37.010012, -122.066216],
     },
@@ -82,7 +82,7 @@ const markers = [
 
 
 
-for (i = 0; i < 4; i++) { //loops through and adds all the markers in the markers library that is created above
+for (i = 0; i < 5; i++) { //loops through and adds all the markers in the markers library that is created above
     marker = L.marker(markers[i].position, {icon: markers[i].icon, ndurl: markers[i].url}).addTo(map);
     marker.on('click', onMarkerClick);
 }
