@@ -21,14 +21,14 @@ var koiIcon = L.icon({
 });
 
 var barrelIcon = L.icon({
-    iconUrl: 'img/barrels1.png',
+    iconUrl: 'img/barrels.jpeg',
     iconSize: [38, 95],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
 });
 
 var rockIcon = L.icon({
-    iconURL: 'img/rockgarden.jpg',
+    iconUrl: 'img/rockgarden.jpg',
     iconSize: [38, 95],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
