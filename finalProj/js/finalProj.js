@@ -39,6 +39,12 @@ var buddhaIcon = L.icon({
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
 });
+var catsCradleIcon = L.icon({
+    iconUrl: 'img/catscradle.jpg',
+    iconSize: [38, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+});
 
 
 const markers = [
@@ -65,6 +71,12 @@ const markers = [
         url: 'localeDescs/buddha.html',
         icon: buddhaIcon,
         position: [37.006623, -122.060037],
+    },
+    {
+        name: 'catsCradleMarker',
+        url: 'localeDescs/catsCradle.html',
+        icon: catsCradleIcon,
+        position: [37.006868, -122.056390],
     }
 ]
 
